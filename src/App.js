@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import QuotesApi from './compontens/quotesApi';
+import Quote from './compontens/quote'
+
+
 
 function App() {
+  const [quote, setQuote] = useState('')
   return (
-    <QuotesApi/>
-  );
+    <div className="App">
+    <h1>QUOTES</h1>
+    <Quote quote={quote}/>
+    <QuotesApi setQuote={setQuote}/>
+  </div>
+
+  )
 }
 
 export default App;
