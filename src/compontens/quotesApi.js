@@ -1,9 +1,13 @@
 import React from 'react';
 import Axios from 'axios';
+import { WiredCard, WiredButton } from 'react-wired-elements';
+
+
 
 
 export default (props) => {
-   
+    
+    
     const url = `https://favqs.com/api/qotd`;
 
     const getData = async () => {
@@ -14,12 +18,25 @@ export default (props) => {
           }
 
 
-    
-        return (
-        <>
-            <h1 onClick={getData}>CLICK HERE</h1>
+          return (
+              
+              
+            <div>
+             <WiredCard fill="#F5F5F5" elevation={3}>
+            <WiredButton onClick={getData}>Click</WiredButton>
+            </WiredCard>
+           
+                
+            </div>
             
-        </>
+  
+
+        
+           
+
+           
+            
+       
     )
    
 
