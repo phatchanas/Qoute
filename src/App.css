@@ -31,10 +31,12 @@
   color: #61dafb;
 }
 h1{
-  font-family:'Tenali Ramakrishna', sans-serif;
-}
+  font-family: 'Pacifico', cursive;
 
-@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tenali+Ramakrishna&display=swap');
+
+
 
 @keyframes App-logo-spin {
   from {
