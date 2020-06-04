@@ -13,11 +13,8 @@ export default (props) => {
     const getData = async () => {
         //fetch data from a url
         const result = await Axios.get(url)
-           props.setQuote(result.data.quote)
-           console.log(result.data)
-                
+           props.setQuote(result.data.quote)         
           }
-
 
           return (
               
