@@ -9,7 +9,7 @@ function App() {
   const [quote, setQuote] = useState('')
   return (
     <div className="App">
-    <h1>QUOTES</h1>
+    <h1>InstaDeep</h1>
     <Quote quote={quote}/>
     <QuotesApi setQuote={setQuote}/>
   </div>
