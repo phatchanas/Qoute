@@ -9,7 +9,7 @@ To install you will need npm or yarn.
 1. clone the repository
 2. cd into the repositorys map
 3. yarn or npm install
-4. yarn or npm start
+4. yarn start or npm start
 
 ## Built with
 * yarn and npm
