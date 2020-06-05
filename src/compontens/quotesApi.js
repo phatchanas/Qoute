@@ -8,7 +8,7 @@ import { WiredCard, WiredButton } from 'react-wired-elements';
 
 export default (props) => {
     const [isLoading, setIsLoading] = useState(false)
-    const url = `http://favqs.com/api/qotd`;
+    const url = `https://favqs.com/api/qotd`;
 
     const getData = async () => {
         //fetch data from a url
@@ -16,6 +16,7 @@ export default (props) => {
         const result = await Axios.get(url)
         .then(result => {
             props.setQuote(result.data.quote)   
+
             setIsLoading(false)        
             }
         )
